@@ -1,0 +1,70 @@
+body{
+    height: 600px;
+}
+
+.box{
+    height: 810px;
+    display: grid;
+    grid-template-areas: "a1 a2 a3"
+                          "a1 a4 a3"
+                          "a1 a5 a3";
+    grid-template-rows: 90px 1fr 90px;
+    grid-template-columns: 200px 1fr 200px;
+
+}
+
+
+.a1{
+    background-color: white;
+    grid-area: a1;
+    display: grid;
+    grid-template-areas: "g1"
+                         "g2"
+                         "g3";
+grid-template-rows: 300px;
+grid-template-columns: 270px;
+}
+
+.g1{
+    background-color: blueviolet;
+    grid-area: g1;
+}
+
+.box .a1 .g1 img{
+    grid-area: g1;
+    width: 80%;
+    height: 100%;
+}
+
+.g2{
+    background-color: antiquewhite;
+    grid-area: g2;
+}
+
+.g3{
+    background-color: aquamarine;
+    grid-area: g3;
+}
+.a2{
+    background-color: red;
+    grid-area: a2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.a3{
+    background-color: yellow;
+    grid-area: a3;
+}
+
+.a4{
+    background-color: pink;
+    grid-area: a4;
+}
+
+.a5{
+    background-color: green;
+    grid-area: a5;
+}
