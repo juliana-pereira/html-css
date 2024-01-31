@@ -32,7 +32,7 @@ grid-template-columns: 270px;
 
 .box .a1 .g1 img{
     grid-area: g1;
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 
@@ -67,4 +67,26 @@ grid-template-columns: 270px;
 .a5{
     background-color: green;
     grid-area: a5;
+}
+
+@media screen and (max-width: 782px){
+    .box{
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: bisque;
+        flex-direction: column;
+        grid-template-areas: "a2"
+                             "a1"
+                             "a3"
+                             "a4"
+                             "a5";
+    }
+    
+ .a5{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: aqua;
+ }
+
 }
